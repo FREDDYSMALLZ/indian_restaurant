@@ -1,0 +1,3 @@
+class Recipee <ApplicationRecord
+
+end
