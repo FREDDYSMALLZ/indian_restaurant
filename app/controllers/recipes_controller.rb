@@ -19,12 +19,10 @@ def create
     flash[:success] = "Recipe was created successfully!"
     redirect_to recipe_path(@recipe)
   else
-    render 'new'
-end
-
+    render 'new' end
 end
 private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :description)
-  end
+    params.require(:recipe).permit(:name, :description)end
+end
